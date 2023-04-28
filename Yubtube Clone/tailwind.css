@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@layer base{
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 8px;
+        height: 56px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+
+
+      .hide-list{
+        max-width: 8%;
+        /* padding:0px !important; */
+      }
+      .hide-list li{
+        padding:1rem 0.5rem;
+        margin-right: 0.5rem;
+      }
+      .hide-list ul li span{
+        display: none;
+      }
+
+      .hide-list ul:not(.primary){
+        display: none;
+      }
+
+      .hide-list hr{
+        display: none;
+      }
+
+      .hide-list ~ .main{
+        min-width: 94%;
+        left:10rem;
+      }
+
+      .hide-list ~ .main .video{
+        width: 20rem;
+      }
+
+      .hide-list ~ .main .video h2{
+        font-size: 1rem;
+      }
+}
